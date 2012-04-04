@@ -16,8 +16,8 @@
 	</header>
 
 	<div id="distort">
-		<audio id="beep-two0" preload="auto">
-			<source src="http://dl.dropbox.com/u/774884/MP3s/static.mp3" controls="">
+		<audio id="static0" preload="auto">
+			<source src="assets/images/static.mp3" controls="">
 			<source src="audio/beep.ogg" controls="">
 			Your browser isn't invited for super fun time.
 		</audio>
@@ -31,17 +31,17 @@
 <script>$("#distort")
   .each(function(i) {
     if (i != 0) { 
-      $("#beep-two")
+      $("#static")
         .clone()
-        .attr("id", "beep-two" + i)
+        .attr("id", "static" + i)
         .appendTo($(this).parent()); 
     }
     $(this).data("beeper", i);
   })
   .mouseenter(function() {
-    $("#beep-two" + $(this).data("beeper"))[0].play();
+    $("#static" + $(this).data("beeper"))[0].play();
   });
-$("#beep-two").attr("id", "beep-two0");
+$("#static").attr("id", "static0");
 </script>
 
 </body>
