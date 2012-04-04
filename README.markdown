@@ -1,4 +1,5 @@
 ## CSS3 & HTML5 Screen Distortion Effect (BF3)
+===============================================
 
 This is a project that aims at mimicking a screen distortion effect - namely the Battlefield 3 effect.
 
