@@ -2,13 +2,14 @@ CSS3 & HTML5 Screen Distortion Effect (BF3)
 ===============================================
 
 This is a project that aims at mimicking a screen distortion effect - namely the Battlefield 3 effect.
+-------------------------------------------------------------------------------------------------------
 
 ###The concept is quite easy:
 -You have an image, picture or hopefully in the future a div or any element that you want to give this effect to
 -The element stays normal throughout the website viewing experience
--When hovered over, the element utilizes the CSS3 animation element to move to the distorted portion of the background image. It also uses HTML5 and JS to play an audio file. Then the image stays in the distorted stage for a few seconds, and finally goes back to its original state.
+-When hovered over, the element utilizes the CSS3 animation element to move to the distorted portion of the background image. It also uses HTML5 and JS to play an audio file. Then the image stays in the distorted stage for a few seconds, and finally goes back to its original state. Basically:
 
-###Hover = Sprite Image change to distorted version and sounds begins.
+Hover = Sprite Image change to distorted version and sounds begins.
 Sprite Image stays in that state for a few seconds.
 Sprite Image goes back to original version.
 
