@@ -1,1 +1,49 @@
-Hello World
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>CSS & HTML5 Screen Distortion</title>
+	
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+	<header>
+		<h1>Screen Distortion Effect with CSS3, HTML5 and JS.</h1>
+	</header>
+
+	<div id="distort">
+		<audio id="beep-two0" preload="auto">
+			<source src="http://dl.dropbox.com/u/774884/MP3s/static.mp3" controls="">
+			<source src="audio/beep.ogg" controls="">
+			Your browser isn't invited for super fun time.
+		</audio>
+	</div>
+
+	<footer>
+		<p>Who let the cat out? <a href="http://htrdesign.net" target="_blank">Rodrigo Leon</a> did.</p>
+	</footer>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>$("#distort")
+  .each(function(i) {
+    if (i != 0) { 
+      $("#beep-two")
+        .clone()
+        .attr("id", "beep-two" + i)
+        .appendTo($(this).parent()); 
+    }
+    $(this).data("beeper", i);
+  })
+  .mouseenter(function() {
+    $("#beep-two" + $(this).data("beeper"))[0].play();
+  });
+$("#beep-two").attr("id", "beep-two0");
+</script>
+
+</body>
+
+</html>
